@@ -118,6 +118,9 @@
   .project-body p { color: var(--ink-soft); margin: 0 0 1.3em; max-width: 52ch; }
   .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
   .tags li { font-family:"Cascadia Code",Consolas,ui-monospace,monospace; font-size: 0.72rem; color: var(--ink-soft); padding: 0.4em 0.75em; border: 1px solid var(--hairline); border-radius: 6px; background: var(--panel); }
+  .proj-link { margin: 14px 0 0; }
+  .proj-link a { font-family:"Cascadia Code",Consolas,ui-monospace,monospace; font-size: 0.8rem; color: var(--gold); text-decoration: none; font-weight: 600; }
+  .proj-link a:hover { text-decoration: underline; }
 
   .shots { display: grid; gap: 14px; }
   .shots.pair { grid-template-columns: 1fr 1fr; }
@@ -293,6 +296,7 @@
           <p class="status"><span class="dot dev"></span> In development · research</p>
           <p>A ~28,000-line agent-based simulation of an entire economy — thousands of families producing, trading, and dying across millennia. I ran 5,000-year simulations, diagnosed emergent wealth-condensation against real econophysics models, and am adding neuroevolution so agents learn their own strategies.</p>
           <ul class="tags"><li>C#</li><li>Agent-based sim</li><li>Chart.js · D3</li><li>Neuroevolution</li></ul>
+          <p class="proj-link"><a href="https://github.com/NatinCrid/economy-sim" target="_blank" rel="noopener">View the code &amp; run it ↗</a></p>
         </div>
       </article>
 
