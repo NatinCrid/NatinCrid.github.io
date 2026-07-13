@@ -59,7 +59,7 @@
     background: radial-gradient(55% 65% at 28% 25%, var(--glow), transparent 72%); pointer-events: none; z-index: 0; }
   .hero-inner { position: relative; z-index: 1; }
   .hero-top { display: flex; align-items: center; gap: 16px; margin-bottom: clamp(24px,4vh,38px); }
-  .avatar { width: 116px; height: 116px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); box-shadow: 0 8px 24px var(--shadow); display: block; margin-bottom: 22px; }
+  .avatar { position: absolute; top: 4px; right: 0; z-index: 3; width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); box-shadow: 0 8px 24px var(--shadow); }
   .seal {
     flex: none; width: 50px; height: 50px; border-radius: 12px; background: var(--panel);
     color: var(--gold); font-family:"Iowan Old Style",Palatino,Georgia,serif; font-weight: 700;
@@ -168,6 +168,7 @@
 
   /* ============================ RESPONSIVE ============================ */
   @media (max-width: 860px) {
+    .avatar { position: static; margin-bottom: 18px; width: 92px; height: 92px; }
     .project { grid-template-columns: 1fr; }
     .project .project-media, .project:nth-of-type(even) .project-media { order: 0; margin-bottom: 4px; }
     .foot-grid { grid-template-columns: 1fr; align-items: start; }
